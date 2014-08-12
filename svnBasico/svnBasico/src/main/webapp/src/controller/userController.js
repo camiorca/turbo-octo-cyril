@@ -35,9 +35,13 @@ App.Controller.UserController = Backbone.View.extend({
             Frases[12] = "Banjo polaroid sustainable Williamsburg pickled actually, distillery gluten-free sartorial +1 jean shorts Wes Anderson keffiyeh...";
             Frases[13] = "Cornhole Bushwick artisan, post-ironic freegan wolf cliche DIY kogi vinyl...";
             Frases[14] = "Jean shorts master cleanse slow-carb McSweeney's, Godard selvage locavore single-origin coffee banjo...";
+            Frases[15] = "Viral fashion axe chambray, forage fixie bitters narwhal Vice XOXO pug fingerstache Marfa Williamsburg VHS...";
+            Frases[16] = "Plaid crucifix actually fanny pack forage readymade deep v...";
+            Frases[17] = "Pour-over stumptown gluten-free, kale chips cray actually retro drinking vinegar...";
+            Frases[18] = "Occupy +1 locavore Odd Future tattooed pug...";
+            Frases[19] = "Irony American Apparel Wes Anderson synth...";
             var top = Frases.length;
             var alet = Math.round(Math.random()*(top-1));
-            console.log('Número aleatorio: ' + alet);
             document.getElementById("msj").innerHTML = "<div class=\"alert alert-danger\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>"+"El usuario "+model.firstName+" "+model.lastName+" nació el "+model.birthday+", y se puede decir que: "+ Frases[alet]+"</div>";
         },
         cancel: function(){
