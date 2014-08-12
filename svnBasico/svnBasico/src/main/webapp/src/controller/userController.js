@@ -38,7 +38,6 @@ App.Controller.UserController = Backbone.View.extend({
             var top = Frases.length;
             var alet = Math.round(Math.random()*(top-1));
             console.log('Número aleatorio: ' + alet);
-            //alert('saved model: '+JSON.stringify(model));
             document.getElementById("msj").innerHTML = "<div class=\"alert alert-danger\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>"+"El usuario "+model.firstName+" "+model.lastName+" nació el "+model.birthday+", y se puede decir que: "+ Frases[alet]+"</div>";
         },
         cancel: function(){
